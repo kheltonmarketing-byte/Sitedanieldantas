@@ -1,773 +1,1179 @@
-<!-- Meta Descriptions & SEO -->
-<meta name="description" content="Conheça a atuação jurídica de Daniel Dantas em Natal/RN, nas áreas de Recursos Especiais e Extraordinários, Direito Previdenciário, Consumidor, Processo Penal e Registro de Imóveis.">
-<meta name="keywords" content="Advogado em Natal, Daniel Dantas advogado, Direito Previdenciário em Natal e grandeNAtal, Advogado de Direito do Consumidor, Recursos Especiais e Extraordinários, Processo Penal, Registro de Imóveis">
-
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<!-- FontAwesome para ícones minimalistas -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<style>
-    :root {
-        --primary: #123D45;
-        --primary-dark: #0B2930;
-        --white: #FFFFFF;
-        --gray-light: #F4F6F6;
-        --gray-medium: #667477;
-        --accent: #A9BEC0;
-        --transition: all 0.3s ease;
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    html {
-        scroll-behavior: smooth;
-    }
-
-    body {
-        font-family: 'Inter', sans-serif;
-        background-color: var(--white);
-        color: var(--primary-dark);
-        line-height: 1.6;
-        -webkit-font-smoothing: antialiased;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        font-family: 'Cinzel', serif;
-        font-weight: 600;
-    }
-
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    ul {
-        list-style: none;
-    }
-
-    .container {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 24px;
-    }
-
-    /* Botões */
-    .btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 14px 28px;
-        font-size: 14px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        border-radius: 4px;
-        transition: var(--transition);
-        cursor: pointer;
-        border: none;
-    }
-
-    .btn-primary {
-        background-color: var(--primary);
-        color: var(--white);
-    }
-
-    .btn-primary:hover {
-        background-color: var(--primary-dark);
-    }
-
-    .btn-outline {
-        background-color: transparent;
-        color: var(--white);
-        border: 1px solid var(--accent);
-    }
-
-    .btn-outline:hover {
-        background-color: rgba(255, 255, 255, 0.1);
-    }
-
-    .btn-secondary-outline {
-        background-color: transparent;
-        color: var(--primary);
-        border: 1px solid var(--primary);
-    }
-
-    .btn-secondary-outline:hover {
-        background-color: var(--primary);
-        color: var(--white);
-    }
-
-    /* Header */
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgba(11, 41, 48, 0.95);
-        backdrop-filter: blur(5px);
-        z-index: 1000;
-        border-bottom: 1px solid rgba(169, 190, 192, 0.2);
-    }
-
-    .nav-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 80px;
-    }
-
-    .logo {
-        font-family: 'Cinzel', serif;
-        color: var(--white);
-        font-size: 20px;
-        font-weight: 700;
-        letter-spacing: 1px;
-    }
-
-    .logo span {
-        color: var(--accent);
-        display: block;
-        font-size: 10px;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-    }
-
-    .nav-links {
-        display: flex;
-        gap: 32px;
-        align-items: center;
-    }
-
-    .nav-links a {
-        color: var(--gray-light);
-        font-size: 13px;
-        font-weight: 500;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        transition: var(--transition);
-    }
-
-    .nav-links a:hover {
-        color: var(--accent);
-    }
-
-    .nav-cta {
-        background-color: transparent;
-        border: 1px solid var(--accent);
-        color: var(--white);
-        padding: 8px 16px;
-        font-size: 12px;
-        border-radius: 2px;
-    }
-
-    .nav-cta:hover {
-        background-color: var(--accent);
-        color: var(--primary-dark);
-    }
-
-    /* Mobile Menu Toggle */
-    .menu-toggle {
-        display: none;
-        color: var(--white);
-        font-size: 24px;
-        cursor: pointer;
-    }
-
-    /* Hero Section */
-    .hero {
-        background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
-        color: var(--white);
-        padding: 180px 0 120px;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .hero-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 60px;
-        align-items: center;
-    }
-
-    .hero-content h1 {
-        font-size: 42px;
-        line-height: 1.2;
-        margin-bottom: 24px;
-        font-weight: 600;
-    }
-
-    .hero-content p {
-        font-size: 16px;
-        color: var(--gray-light);
-        margin-bottom: 36px;
-        line-height: 1.8;
-        font-weight: 300;
-    }
-
-    .hero-buttons {
-        display: flex;
-        gap: 16px;
-        flex-wrap: wrap;
-    }
-
-    .hero-image-wrapper {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .hero-card-institutional {
-        width: 100%;
-        max-width: 420px;
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(169, 190, 192, 0.2);
-        padding: 50px 40px;
-        border-radius: 8px;
-        text-align: center;
-        backdrop-filter: blur(10px);
-        box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-    }
-
-    .hero-card-institutional i {
-        font-size: 48px;
-        color: var(--accent);
-        margin-bottom: 20px;
-    }
-
-    .hero-card-institutional h3 {
-        font-size: 22px;
-        margin-bottom: 10px;
-        letter-spacing: 1px;
-    }
-
-    .hero-card-institutional p {
-        font-size: 13px;
-        color: var(--accent);
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
-
-    /* Seção Apresentação */
-    .about {
-        padding: 100px 0;
-        background-color: var(--white);
-    }
-
-    .about-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 60px;
-        align-items: center;
-    }
-
-    .about-text h2 {
-        font-size: 32px;
-        color: var(--primary-dark);
-        margin-bottom: 24px;
-        position: relative;
-    }
-
-    .about-text h2::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: -10px;
-        width: 60px;
-        height: 2px;
-        background-color: var(--accent);
-    }
-
-    .about-text p {
-        color: var(--gray-medium);
-        margin-bottom: 20px;
-        font-size: 15px;
-        line-height: 1.8;
-    }
-
-    .about-box {
-        background-color: var(--gray-light);
-        border-left: 4px solid var(--primary);
-        padding: 40px;
-        border-radius: 0 8px 8px 0;
-    }
-
-    .about-box h4 {
-        font-size: 18px;
-        color: var(--primary);
-        margin-bottom: 12px;
-    }
-
-    .about-box p {
-        font-size: 14px;
-        color: var(--gray-medium);
-        margin: 0;
-    }
-
-    /* Áreas de Atuação */
-    .practice-areas {
-        padding: 100px 0;
-        background-color: var(--gray-light);
-    }
-
-    .section-header {
-        text-align: center;
-        max-width: 700px;
-        margin: 0 auto 60px;
-    }
-
-    .section-header h2 {
-        font-size: 32px;
-        color: var(--primary-dark);
-        margin-bottom: 16px;
-    }
-
-    .section-header p {
-        color: var(--gray-medium);
-        font-size: 15px;
-    }
-
-    .cards-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 30px;
-    }
-
-    .card {
-        background-color: var(--white);
-        padding: 40px 30px;
-        border-radius: 8px;
-        box-shadow: 0 4px 20px rgba(18, 61, 69, 0.05);
-        transition: var(--transition);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        border: 1px solid rgba(169, 190, 192, 0.2);
-    }
-
-    .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 30px rgba(18, 61, 69, 0.1);
-        border-color: var(--primary);
-    }
-
-    .card-icon {
-        font-size: 32px;
-        color: var(--primary);
-        margin-bottom: 24px;
-    }
-
-    .card h3 {
-        font-size: 20px;
-        color: var(--primary-dark);
-        margin-bottom: 16px;
-    }
-
-    .card p {
-        color: var(--gray-medium);
-        font-size: 14px;
-        margin-bottom: 24px;
-        line-height: 1.7;
-    }
-
-    .card-link {
-        color: var(--primary);
-        font-weight: 600;
-        font-size: 13px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .card-link:hover {
-        color: var(--primary-dark);
-    }
-
-    /* Seção de Destaque Superior */
-    .highlight-superior {
-        padding: 100px 0;
-        background-color: var(--primary-dark);
-        color: var(--white);
-        text-align: center;
-    }
-
-    .highlight-superior .container {
-        max-width: 800px;
-    }
-
-    .highlight-superior h2 {
-        font-size: 34px;
-        margin-bottom: 24px;
-        color: var(--white);
-    }
-
-    .highlight-superior p {
-        font-size: 16px;
-        color: var(--gray-light);
-        margin-bottom: 40px;
-        line-height: 1.8;
-        font-weight: 300;
-    }
-
-    /* Diferenciais */
-    .differentials {
-        padding: 100px 0;
-        background-color: var(--white);
-    }
-
-    .diff-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 30px;
-        margin-top: 50px;
-    }
-
-    .diff-item {
-        padding: 30px;
-        background-color: var(--gray-light);
-        border-radius: 6px;
-        border-top: 3px solid var(--primary);
-    }
-
-    .diff-item h4 {
-        font-size: 16px;
-        color: var(--primary-dark);
-        margin-bottom: 12px;
-        font-family: 'Inter', sans-serif;
-        font-weight: 600;
-    }
-
-    .diff-item p {
-        font-size: 14px;
-        color: var(--gray-medium);
-        line-height: 1.6;
-    }
-
-    /* Como Funciona */
-    .process {
-        padding: 100px 0;
-        background-color: var(--gray-light);
-    }
-
-    .process-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-        margin-top: 50px;
-    }
-
-    .process-card {
-        background-color: var(--white);
-        padding: 40px 30px;
-        border-radius: 8px;
-        position: relative;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-    }
-
-    .process-number {
-        font-family: 'Cinzel', serif;
-        font-size: 36px;
-        color: var(--accent);
-        font-weight: 700;
-        margin-bottom: 16px;
-        display: block;
-    }
-
-    .process-card h3 {
-        font-size: 18px;
-        color: var(--primary-dark);
-        margin-bottom: 12px;
-    }
-
-    .process-card p {
-        font-size: 14px;
-        color: var(--gray-medium);
-        line-height: 1.7;
-    }
-
-    /* Blog / Conteúdos */
-    .blog {
-        padding: 100px 0;
-        background-color: var(--white);
-    }
-
-    .blog-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 30px;
-    }
-
-    .blog-card {
-        background-color: var(--gray-light);
-        border-radius: 8px;
-        overflow: hidden;
-        border: 1px solid rgba(169, 190, 192, 0.2);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .blog-content {
-        padding: 30px;
-    }
-
-    .blog-tag {
-        font-size: 11px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        color: var(--primary);
-        font-weight: 600;
-        margin-bottom: 12px;
-        display: block;
-    }
-
-    .blog-card h3 {
-        font-size: 18px;
-        color: var(--primary-dark);
-        margin-bottom: 16px;
-        line-height: 1.4;
-    }
-
-    .blog-card p {
-        font-size: 14px;
-        color: var(--gray-medium);
-        margin-bottom: 20px;
-        line-height: 1.6;
-    }
-
-    .blog-footer {
-        padding: 0 30px 30px 30px;
-    }
-
-    .read-more {
-        font-size: 13px;
-        font-weight: 600;
-        color: var(--primary);
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-    }
-
-    /* FAQ */
-    .faq {
-        padding: 100px 0;
-        background-color: var(--gray-light);
-    }
-
-    .faq-container {
-        max-width: 800px;
-        margin: 50px auto 0;
-    }
-
-    .faq-item {
-        background-color: var(--white);
-        margin-bottom: 16px;
-        border-radius: 6px;
-        border: 1px solid rgba(169, 190, 192, 0.2);
-        overflow: hidden;
-    }
-
-    .faq-question {
-        padding: 20px 24px;
-        font-size: 16px;
-        font-weight: 600;
-        color: var(--primary-dark);
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .faq-question i {
-        transition: var(--transition);
-        color: var(--primary);
-    }
-
-    .faq-answer {
-        padding: 0 24px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease, padding 0.3s ease;
-        font-size: 14px;
-        color: var(--gray-medium);
-        line-height: 1.7;
-    }
-
-    .faq-item.active .faq-answer {
-        padding: 0 24px 24px 24px;
-        max-height: 200px;
-    }
-
-    .faq-item.active .faq-question i {
-        transform: rotate(180deg);
-    }
-
-    /* Contato */
-    .contact {
-        padding: 100px 0;
-        background-color: var(--white);
-    }
-
-    .contact-box {
-        background-color: var(--primary-dark);
-        color: var(--white);
-        border-radius: 12px;
-        padding: 60px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 50px;
-        align-items: center;
-    }
-
-    .contact-info h2 {
-        font-size: 32px;
-        margin-bottom: 20px;
-    }
-
-    .contact-info p {
-        color: var(--gray-light);
-        font-size: 15px;
-        margin-bottom: 30px;
-        line-height: 1.8;
-    }
-
-    .contact-details {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .contact-item {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        font-size: 15px;
-        color: var(--gray-light);
-    }
-
-    .contact-item i {
-        color: var(--accent);
-        font-size: 18px;
-        width: 24px;
-    }
-
-    .contact-action-area {
-        background-color: rgba(255,255,255,0.03);
-        border: 1px solid rgba(169, 190, 192, 0.2);
-        padding: 40px;
-        border-radius: 8px;
-        text-align: center;
-    }
-
-    .contact-action-area h3 {
-        font-size: 20px;
-        margin-bottom: 16px;
-    }
-
-    .contact-action-area p {
-        font-size: 14px;
-        color: var(--gray-light);
-        margin-bottom: 24px;
-    }
-
-    /* CTA Final */
-    .cta-final {
-        padding: 100px 0;
-        background-color: var(--primary);
-        color: var(--white);
-        text-align: center;
-    }
-
-    .cta-final h2 {
-        font-size: 34px;
-        margin-bottom: 20px;
-    }
-
-    .cta-final p {
-        font-size: 16px;
-        color: var(--gray-light);
-        margin-bottom: 40px;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /* Footer */
-    footer {
-        background-color: #07191D;
-        color: var(--gray-medium);
-        padding: 60px 0 30px;
-        font-size: 13px;
-    }
-
-    .footer-grid {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        gap: 40px;
-        margin-bottom: 40px;
-        border-bottom: 1px solid rgba(169, 190, 192, 0.1);
-        padding-bottom: 40px;
-    }
-
-    .footer-col h4 {
-        color: var(--white);
-        font-size: 15px;
-        margin-bottom: 20px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-
-    .footer-col p, .footer-col ul li a {
-        color: var(--gray-medium);
-        margin-bottom: 12px;
-        display: block;
-        transition: var(--transition);
-    }
-
-    .footer-col ul li a:hover {
-        color: var(--accent);
-    }
-
-    .footer-bottom {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 20px;
-        color: var(--gray-medium);
-        font-size: 12px;
-    }
-
-    /* Responsividade */
-    @media (max-width: 900px) {
-        .hero-grid, .about-grid, .contact-box, .footer-grid {
-            grid-template-columns: 1fr;
-            gap: 40px;
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FD Advogados RN | Advocacia em Natal - RN</title>
+    
+    <!-- Meta Descriptions & SEO -->
+    <meta name="description" content="Conheça a FD Advogados RN, com atuação em Recursos Especiais e Extraordinários, Direito Previdenciário, Direito do Consumidor, Processo Penal e Registro de Imóveis em Natal/RN.">
+    <meta name="keywords" content="FD Advogados RN, Advogado em Natal, Direito Previdenciário em Natal, Direito do Consumidor, Recursos Especiais e Extraordinários, Processo Penal, Registro de Imóveis">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome para ícones minimalistas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #123D45;
+            --primary-dark: #0B2930;
+            --white: #FFFFFF;
+            --gray-light: #F4F6F6;
+            --gray-medium: #667477;
+            --accent: #A9BEC0;
+            --transition: all 0.3s ease;
         }
 
-        .hero-content h1 {
-            font-size: 32px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--white);
+            color: var(--primary-dark);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cinzel', serif;
+            font-weight: 600;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Botões */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 4px;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--white);
+            border: 1px solid var(--accent);
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(11, 41, 48, 0.95);
+            backdrop-filter: blur(5px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(169, 190, 192, 0.2);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            font-family: 'Cinzel', serif;
+            color: var(--white);
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--accent);
+            display: block;
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
         }
 
         .nav-links {
-            display: none; /* Implementação simplificada para mobile */
+            display: flex;
+            gap: 28px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--gray-light);
+            font-size: 13px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .nav-cta {
+            background-color: transparent;
+            border: 1px solid var(--accent);
+            color: var(--white);
+            padding: 8px 16px;
+            font-size: 12px;
+            border-radius: 2px;
+        }
+
+        .nav-cta:hover {
+            background-color: var(--accent);
+            color: var(--primary-dark);
         }
 
         .menu-toggle {
+            display: none;
+            color: var(--white);
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+            color: var(--white);
+            padding: 180px 0 120px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 40px;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            font-weight: 600;
+        }
+
+        .hero-content p {
+            font-size: 16px;
+            color: var(--gray-light);
+            margin-bottom: 36px;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-card-institutional {
+            width: 100%;
+            max-width: 420px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(169, 190, 192, 0.2);
+            padding: 40px 30px;
+            border-radius: 8px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .profile-img-preview {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px auto;
+            border: 2px solid var(--accent);
+        }
+
+        .hero-card-institutional h3 {
+            font-size: 20px;
+            margin-bottom: 6px;
+            letter-spacing: 1px;
+        }
+
+        .hero-card-institutional .sub-brand {
+            font-size: 12px;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 4px;
             display: block;
         }
-    }
-</style>
+
+        .hero-card-institutional p {
+            font-size: 12px;
+            color: var(--gray-light);
+            margin: 0;
+        }
+
+        /* Seção Apresentação */
+        .about {
+            padding: 100px 0;
+            background-color: var(--white);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 32px;
+            color: var(--primary-dark);
+            margin-bottom: 24px;
+            position: relative;
+        }
+
+        .about-text h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 60px;
+            height: 2px;
+            background-color: var(--accent);
+        }
+
+        .about-text p {
+            color: var(--gray-medium);
+            margin-bottom: 20px;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .about-box {
+            background-color: var(--gray-light);
+            border-left: 4px solid var(--primary);
+            padding: 40px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .about-box h4 {
+            font-size: 18px;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+
+        .about-box p {
+            font-size: 14px;
+            color: var(--gray-medium);
+            margin: 0;
+        }
+
+        /* Áreas de Atuação */
+        .practice-areas {
+            padding: 100px 0;
+            background-color: var(--gray-light);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+
+        .section-header h2 {
+            font-size: 32px;
+            color: var(--primary-dark);
+            margin-bottom: 16px;
+        }
+
+        .section-header p {
+            color: var(--gray-medium);
+            font-size: 15px;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: var(--white);
+            padding: 40px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(18, 61, 69, 0.05);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid rgba(169, 190, 192, 0.2);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(18, 61, 69, 0.1);
+            border-color: var(--primary);
+        }
+
+        .card-icon {
+            font-size: 32px;
+            color: var(--primary);
+            margin-bottom: 24px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            color: var(--primary-dark);
+            margin-bottom: 16px;
+        }
+
+        .card p {
+            color: var(--gray-medium);
+            font-size: 14px;
+            margin-bottom: 24px;
+            line-height: 1.7;
+        }
+
+        .card-link {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card-link:hover {
+            color: var(--primary-dark);
+        }
+
+        /* Seção de Destaque Superior */
+        .highlight-superior {
+            padding: 100px 0;
+            background-color: var(--primary-dark);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .highlight-superior .container {
+            max-width: 800px;
+        }
+
+        .highlight-superior h2 {
+            font-size: 34px;
+            margin-bottom: 24px;
+            color: var(--white);
+        }
+
+        .highlight-superior p {
+            font-size: 16px;
+            color: var(--gray-light);
+            margin-bottom: 40px;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        /* Diferenciais */
+        .differentials {
+            padding: 100px 0;
+            background-color: var(--white);
+        }
+
+        .diff-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .diff-item {
+            padding: 30px;
+            background-color: var(--gray-light);
+            border-radius: 6px;
+            border-top: 3px solid var(--primary);
+        }
+
+        .diff-item h4 {
+            font-size: 16px;
+            color: var(--primary-dark);
+            margin-bottom: 12px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+        }
+
+        .diff-item p {
+            font-size: 14px;
+            color: var(--gray-medium);
+            line-height: 1.6;
+        }
+
+        /* Como Funciona */
+        .process {
+            padding: 100px 0;
+            background-color: var(--gray-light);
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .process-card {
+            background-color: var(--white);
+            padding: 40px 30px;
+            border-radius: 8px;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+
+        .process-number {
+            font-family: 'Cinzel', serif;
+            font-size: 36px;
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .process-card h3 {
+            font-size: 18px;
+            color: var(--primary-dark);
+            margin-bottom: 12px;
+        }
+
+        .process-card p {
+            font-size: 14px;
+            color: var(--gray-medium);
+            line-height: 1.7;
+        }
+
+        /* Blog / Conteúdos */
+        .blog {
+            padding: 100px 0;
+            background-color: var(--white);
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .blog-card {
+            background-color: var(--gray-light);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(169, 190, 192, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .blog-content {
+            padding: 30px;
+        }
+
+        .blog-tag {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .blog-card h3 {
+            font-size: 18px;
+            color: var(--primary-dark);
+            margin-bottom: 16px;
+            line-height: 1.4;
+        }
+
+        .blog-card p {
+            font-size: 14px;
+            color: var(--gray-medium);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .blog-footer {
+            padding: 0 30px 30px 30px;
+        }
+
+        .read-more {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* FAQ */
+        .faq {
+            padding: 100px 0;
+            background-color: var(--gray-light);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 50px auto 0;
+        }
+
+        .faq-item {
+            background-color: var(--white);
+            margin-bottom: 16px;
+            border-radius: 6px;
+            border: 1px solid rgba(169, 190, 192, 0.2);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--primary-dark);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question i {
+            transition: var(--transition);
+            color: var(--primary);
+        }
+
+        .faq-answer {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            font-size: 14px;
+            color: var(--gray-medium);
+            line-height: 1.7;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 24px 24px 24px;
+            max-height: 200px;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        /* Contato */
+        .contact {
+            padding: 100px 0;
+            background-color: var(--white);
+        }
+
+        .contact-box {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            border-radius: 12px;
+            padding: 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .contact-info h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            color: var(--gray-light);
+            font-size: 15px;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 15px;
+            color: var(--gray-light);
+        }
+
+        .contact-item i {
+            color: var(--accent);
+            font-size: 18px;
+            width: 24px;
+        }
+
+        .contact-action-area {
+            background-color: rgba(255,255,255,0.03);
+            border: 1px solid rgba(169, 190, 192, 0.2);
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .contact-action-area h3 {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+
+        .contact-action-area p {
+            font-size: 14px;
+            color: var(--gray-light);
+            margin-bottom: 24px;
+        }
+
+        /* CTA Final */
+        .cta-final {
+            padding: 100px 0;
+            background-color: var(--primary);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .cta-final h2 {
+            font-size: 34px;
+            margin-bottom: 20px;
+        }
+
+        .cta-final p {
+            font-size: 16px;
+            color: var(--gray-light);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #07191D;
+            color: var(--gray-medium);
+            padding: 60px 0 30px;
+            font-size: 13px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid rgba(169, 190, 192, 0.1);
+            padding-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            font-size: 15px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-col p, .footer-col ul li a {
+            color: var(--gray-medium);
+            margin-bottom: 12px;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            color: var(--gray-medium);
+            font-size: 12px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 900px) {
+            .hero-grid, .about-grid, .contact-box, .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-content h1 {
+                font-size: 32px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navegação -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                FD Advogados RN
+                <span>Natal • RN</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#sobre">Sobre</a>
+                <a href="#areas">Áreas de Atuação</a>
+                <a href="#diferenciais">Diferenciais</a>
+                <a href="#atendimento">Atendimento</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contato" class="nav-cta">Contato</a>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>Atuação jurídica estratégica, com seriedade e compromisso em cada caso.</h1>
+                    <p>Assessoria e atuação jurídica em diferentes áreas do Direito, com atenção às particularidades de cada situação e às necessidades de cada cliente.</p>
+                    <div class="hero-buttons">
+                        <a href="https://www.instagram.com/fdadvogadosrn/" target="_blank" class="btn btn-primary">Falar com o Advogado</a>
+                        <a href="#areas" class="btn btn-outline">Conhecer Áreas de Atuação</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-card-institutional">
+                        <img src="https://scontent-for2-1.cdninstagram.com/v/t51.82787-19/695998569_18134556472483781_3376172598105722471_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=GGkYfCnFn7N0SG1AAGfOfxoXk9oubmNDAQAB0j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy44MTUuQzMifQ%3D%3D&_nc_ohc=n4mm_M7plvkQ7kNvwGgjxZI&_nc_oc=AdqEo7Jo5WNOjDBkU-93iuKXY7ScwoUJCCL29sdvAzEP8epsaR3-DBcQwtZIPkgX94w&_nc_zt=24&_nc_ht=scontent-for2-1.cdninstagram.com&_nc_gid=01ZF868yEVAh_Bl-SVvGsQ&_nc_ss=7b6a8&_nc_ct=RQosPBUCFQIAAAA&oh=00_AQSwFv9EHolQZ5JpeZ_7gPzayjfvAMXYKPZNerImYrvZmg&oe=6AFD1575" alt="FD Advogados RN" class="profile-img-preview" onerror="this.style.display='none'">
+                        <span class="sub-brand">FD Advogados RN</span>
+                        <h3>Excelência e Rigor Jurídico</h3>
+                        <p>Responsável Técnico: Daniel Dantas • Natal/RN</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Apresentação do Escritório -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Conheça a FD Advogados RN</h2>
+                    <p>A atuação jurídica exige conhecimento técnico, responsabilidade e atenção às particularidades de cada caso.</p>
+                    <p>A FD Advogados RN apresenta atuação em diferentes áreas do Direito, incluindo Direito Previdenciário, Direito do Consumidor, Processo Penal, Registro de Imóveis e recursos perante os tribunais superiores, tendo <strong>Daniel Dantas</strong> como responsável profissional.</p>
+                    <p>O objetivo é oferecer orientação jurídica clara e condução responsável das demandas, considerando as circunstâncias e necessidades de cada cliente.</p>
+                </div>
+                <div class="about-box">
+                    <h4>Atuação Estratégica</h4>
+                    <p>Cada demanda é tratada com rigor técnico, garantindo uma análise pormenorizada do cenário legal e a busca pelas melhores diretrizes aplicáveis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Áreas de Atuação -->
+    <section id="areas" class="practice-areas">
+        <div class="container">
+            <div class="section-header">
+                <h2>Áreas de atuação jurídica</h2>
+                <p>Conheça as principais áreas em que a FD Advogados RN desenvolve sua atuação profissional.</p>
+            </div>
+            <div class="cards-grid">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div>
+                        <div class="card-icon"><i class="fa-solid fa-book-open"></i></div>
+                        <h3>Recursos Especiais e Extraordinários</h3>
+                        <p>Atuação relacionada à análise e elaboração de recursos destinados aos tribunais superiores, observando os requisitos legais e processuais aplicáveis.</p>
+                    </div>
+                    <a href="https://www.instagram.com/fdadvogadosrn/" target="_blank" class="card-link">Solicitar informações <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <div>
+                        <div class="card-icon"><i class="fa-solid fa-file-shield"></i></div>
+                        <h3>Direito Previdenciário</h3>
+                        <p>Orientação e atuação em questões relacionadas aos direitos previdenciários e benefícios da Previdência Social.</p>
+                    </div>
+                    <a href="https://www.instagram.com/fdadvogadosrn/" target="_blank" class="card-link">Solicitar informações <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <div>
+                        <div class="card-icon"><i class="fa-solid fa-handshake"></i></div>
+                        <h3>Direito do Consumidor</h3>
+                        <p>Atuação em questões envolvendo relações de consumo, direitos do consumidor e conflitos entre consumidores e fornecedores.</p>
+                    </div>
+                    <a href="https://www.instagram.com/fdadvogadosrn/" target="_blank" class="card-link">Solicitar informações <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Card 4 -->
+                <div class="card">
+                    <div>
+                        <div class="card-icon"><i class="fa-solid fa-gavel"></i></div>
+                        <h3>Processo Penal</h3>
+                        <p>Atuação jurídica em questões relacionadas ao processo penal, com atenção aos direitos e garantias previstos na legislação.</p>
+                    </div>
+                    <a href="https://www.instagram.com/fdadvogadosrn/" target="_blank" class="card-link">Solicitar informações <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Card 5 -->
+                <div class="card">
+                    <div>
+                        <div class="card-icon"><i class="fa-solid fa-building-columns"></i></div>
+                        <h3>Registro de Imóveis</h3>
+                        <p>Atuação em questões jurídicas relacionadas a registros imobiliários, documentação, regularização e procedimentos registrais.</p>
+                    </div>
+                    <a href="https://www.instagram.com/fdadvogadosrn/" target="_blank" class="card-link">Solicitar informações <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Destaque: Tribunais Superiores -->
+    <section class="highlight-superior">
+        <div class="container">
+            <h2>Atuação jurídica em Recursos Especiais e Extraordinários.</h2>
+            <p>Demandas que envolvem recursos aos tribunais superiores exigem análise técnica, atenção aos requisitos de admissibilidade e compreensão das particularidades processuais de cada caso. Conheça a atuação da FD Advogados RN nessa área e solicite informações sobre sua situação jurídica.</p>
+            <a href="https://www.instagram.com/fdadvogadosrn/" target="_blank" class="btn btn-outline">Solicitar Informações</a>
+        </div>
+    </section>
+
+    <!-- Seção: Diferenciais Profissionais -->
+    <section id="diferenciais" class="differentials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Compromisso com uma atuação jurídica responsável.</h2>
+                <p>Pilares institucionais que fundamentam a prestação de serviços jurídicos da FD Advogados RN.</p>
+            </div>
+            <div class="diff-grid">
+                <div class="diff-item">
+                    <h4>Análise individualizada</h4>
+                    <p>Estudo pormenorizado de cada demanda para identificar o enquadramento jurídico adequado.</p>
+                </div>
+                <div class="diff-item">
+                    <h4>Comunicação clara</h4>
+                    <p>Orientação transparente e linguagem objetiva na transmissão de informações ao cliente.</p>
+                </div>
+                <div class="diff-item">
+                    <h4>Atenção às particularidades</h4>
+                    <p>Respeito rigoroso aos detalhes fáticos e legais específicos de cada caso apresentado.</p>
+                </div>
+                <div class="diff-item">
+                    <h4>Responsabilidade na condução</h4>
+                    <p>Atuação ética, pautada pela cautela técnica e pelo zelo profissional.</p>
+                </div>
+                <div class="diff-item">
+                    <h4>Atuação orientada</h4>
+                    <p>Serviços pautados estritamente pela legislação e pelas garantias constitucionais.</p>
+                </div>
+                <div class="diff-item">
+                    <h4>Transparência</h4>
+                    <p>Relação sólida baseada na clareza de expectativas e na ética profissional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Como Funciona o Atendimento -->
+    <section id="atendimento" class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entenda como iniciar seu atendimento.</h2>
+                <p>Um fluxo simples, transparente e seguro para iniciar sua orientação jurídica.</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-card">
+                    <span class="process-number">01</span>
+                    <h3>Primeiro contato</h3>
+                    <p>O interessado apresenta sua necessidade e solicita informações sobre o atendimento.</p>
+                </div>
+                <div class="process-card">
+                    <span class="process-number">02</span>
+                    <h3>Análise inicial</h3>
+                    <p>As informações são avaliadas para verificar a possibilidade de orientação jurídica.</p>
+                </div>
+                <div class="process-card">
+                    <span class="process-number">03</span>
+                    <h3>Orientação jurídica</h3>
+                    <p>São apresentadas informações sobre os possíveis próximos passos, considerando as particularidades da demanda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Conteúdos e Orientações Jurídicas -->
+    <section class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Orientações e Artigos Jurídicos</h2>
+                <p>Conteúdos informativos preparados para esclarecer aspectos relevantes do Direito.</p>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <span class="blog-tag">Direito Previdenciário</span>
+                        <h3>Aspectos essenciais na análise de benefícios previdenciários</h3>
+                        <p>Compreenda a importância de uma revisão técnica e acompanhamento adequado nos processos junto à Previdência Social.</p>
+                    </div>
+                    <div class="blog-footer">
+                        <a href="https://www.instagram.com/fdadvogadosrn/" target="_blank" class="read-more">Leia mais <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <span class="blog-tag">Tribunais Superiores</span>
+                        <h3>O papel dos Recursos Especiais e Extraordinários no sistema jurídico</h3>
+                        <p>Entenda os limites de atuação e os pressupostos processuais indispensáveis para submeter matérias às cortes superiores.</p>
+                    </div>
+                    <div class="blog-footer">
+                        <a href="https://www.instagram.com/fdadvogadosrn/" target="_blank" class="read-more">Leia mais <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <span class="blog-tag">Registro de Imóveis</span>
+                        <h3>Segurança jurídica e regularização registral imobiliária</h3>
+                        <p>Informações fundamentais sobre procedimentos de regularização documental e cautelas em transações de bens imóveis.</p>
+                    </div>
+                    <div class="blog-footer">
+                        <a href="https://www.instagram.com/fdadvogadosrn/" target="_blank" class="read-more">Leia mais <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Perguntas Frequentes -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perguntas Frequentes</h2>
+                <p>Esclareça suas principais dúvidas sobre os serviços e a dinâmica de atendimento.</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Quais são as áreas de atuação?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        A atuação abrange Recursos Especiais e Extraordinários, Direito Previdenciário, Direito do Consumidor, Processo Penal e Registro de Imóveis.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Como funciona uma consulta jurídica?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        A consulta consiste na escuta qualificada da situação apresentada, seguida de análise técnica preliminar para orientação sobre as vias legais cabíveis.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Como saber se meu caso pode ser objeto de recurso?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        É necessária a análise integral dos autos do processo e das decisões já proferidas para verificar o preenchimento dos requisitos de admissibilidade recursal.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Como funciona o atendimento previdenciário?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Envolve o exame da documentação do segurado, histórico de contribuições e avaliação do enquadramento legal para o benefício almejado.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Como posso solicitar uma análise jurídica?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Você pode entrar em contato diretamente através dos canais oficiais disponíveis nesta página para apresentar sua demanda inicial.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        O atendimento é realizado em Natal?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Sim, a atuação é centrada em Natal/RN, prestando serviços de assessoria e consultoria jurídica na região e tribunais competentes.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Contato -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-info">
+                    <h2>Precisa de orientação jurídica?</h2>
+                    <p>Entre em contato com a FD Advogados RN para apresentar sua situação e obter informações sobre o atendimento jurídico.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-landmark"></i>
+                            <span>FD Advogados RN</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <span>Responsável: Daniel Dantas</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Natal / RN</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-brands fa-instagram"></i>
+                            <a href="https://www.instagram.com/fdadvogadosrn/" target="_blank" style="text-decoration: underline;">@fdadvogadosrn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-action-area">
+                    <h3>Inicie seu contato</h3>
+                    <p>Disponibilizamos nossos canais oficiais para o primeiro alinhamento da sua necessidade jurídica.</p>
+                    <a href="https://www.instagram.com/fdadvogadosrn/" target="_blank" class="btn btn-primary" style="width: 100%; margin-bottom: 12px;">
+                        <i class="fa-brands fa-instagram" style="margin-right: 8px;"></i> Falar via Instagram
+                    </a>
+                    <span style="font-size: 12px; color: var(--accent); display: block; margin-top: 10px;">WhatsApp em breve</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-final">
+        <div class="container">
+            <h2>Cada questão jurídica merece atenção e análise responsável.</h2>
+            <p>Conheça a atuação da FD Advogados RN e solicite informações sobre atendimento jurídico.</p>
+            <a href="https://www.instagram.com/fdadvogadosrn/" target="_blank" class="btn btn-outline">Falar com o Advogado</a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 style="font-family: 'Cinzel', serif;">FD Advogados RN</h4>
+                    <p>Escritório com atuação estratégica em Natal/RN e tribunais superiores, pautando sua prática na ética, responsabilidade e excelência técnica sob a responsabilidade de Daniel Dantas.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Áreas</h4>
+                    <ul>
+                        <li><a href="#areas">Recursos Especiais e Extraordinários</a></li>
+                        <li><a href="#areas">Direito Previdenciário</a></li>
+                        <li><a href="#areas">Direito do Consumidor</a></li>
+                        <li><a href="#areas">Processo Penal</a></li>
+                        <li><a href="#areas">Registro de Imóveis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/fdadvogadosrn/" target="_blank">Instagram Oficial</a></li>
+                        <li><a href="#contato">Natal / RN</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FD Advogados RN. Todos os direitos reservados.</p>
+                <p>Desenvolvido em conformidade com o Código de Ética e Disciplina da OAB.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para o Acordeão (FAQ) -->
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                const currentActive = document.querySelector('.faq-item.active');
+                if (currentActive && currentActive !== item) {
+                    currentActive.classList.remove('active');
+                }
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
